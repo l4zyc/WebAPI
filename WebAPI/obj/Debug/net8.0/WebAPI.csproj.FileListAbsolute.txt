@@ -146,3 +146,4 @@
 /Users/lazycode/Projects/WebAPI/WebAPI/obj/Debug/net8.0/WebAPI.genruntimeconfig.cache
 /Users/lazycode/Projects/WebAPI/WebAPI/obj/Debug/net8.0/ref/WebAPI.dll
 /Users/lazycode/Projects/WebAPI/WebAPI/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/lazycode/Projects/WebAPI/WebAPI/obj/Debug/net8.0/WebAPI.sourcelink.json

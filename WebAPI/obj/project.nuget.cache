@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Hl6VxEbJrfk=",
+  "dgSpecHash": "kOzkjdfreQc=",
   "success": true,
   "projectFilePath": "/Users/lazycode/Projects/WebAPI/WebAPI/WebAPI.csproj",
   "expectedPackageFiles": [
     "/Users/lazycode/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/lazycode/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
+    "/Users/lazycode/.nuget/packages/bootstrap/5.3.3/bootstrap.5.3.3.nupkg.sha512",
     "/Users/lazycode/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/lazycode/.nuget/packages/microsoft.aspnetcore.openapi/8.0.11/microsoft.aspnetcore.openapi.8.0.11.nupkg.sha512",
     "/Users/lazycode/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
