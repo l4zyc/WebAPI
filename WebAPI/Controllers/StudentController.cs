@@ -1,4 +1,3 @@
-using Azure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Models;
@@ -18,7 +17,7 @@ namespace WebAPI.Controllers
             _context = context;
         }
 
-        [HttpGet("id")] 
+        [HttpGet("{id}")] 
         public async Task<ActionResult<GetStudentResult>> GetResult(String id) {
             try {
                 bool isStudentExists = await _context.Student.Where(x => x.StudentID == id).AnyAsync();
