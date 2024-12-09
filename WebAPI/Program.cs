@@ -55,11 +55,6 @@ app.UseRouting(); //Sets up routing for the app. //Track
 app.UseAuthentication();
 app.UseAuthorization(); //Adds authentication and authorization middleware.
 
-app.MapGet("/index.html", context => {
-    context.Response.Redirect("/Students", permanent: true);
-    return Task.CompletedTask;
-});
-
 app.MapRazorPages(); //maps routes for Razor Pages (e.g., /Students). //Destination Razor Pages
 app.MapControllers(); //maps routes for API controllers (e.g., /api/students). //Destination Controller
 

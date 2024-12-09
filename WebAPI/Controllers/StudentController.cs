@@ -30,7 +30,7 @@ namespace WebAPI.Controllers
                     .Where(x => x.StudentID == id)
                     .Select(x => new GetStudentResult {
                         StudentID = x.StudentID,
-                        StudentName = $"{x.FirstName} {x.LastName}",
+                        StudentName = $"{x.FirstName}{x.LastName}",
                         age = x.Age,
                         MajorName = x.Major.MajorName
                     })

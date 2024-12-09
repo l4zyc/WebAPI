@@ -5,14 +5,26 @@
 }
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-<h1>Student Page</h1>
-<div>
+<head>
+    <link rel="stylesheet" href="~/css/Students.css" />
+</head>
+
+<div class="form-container">
     <form method="post">
-        Name:
-            <input asp-for="student!.FirstName" />
-            <input asp-for="student!.LastName"/>
-        Age:
-            <input asp-for="student!.Age"/>
-        <input type="submit">
+        <div class="form-group">
+            <label asp-for="student!.FirstName">First Name:</label>
+            <input asp-for="student!.FirstName" class="form-input" />
+        </div>
+        <div class="form-group">
+            <label asp-for="student!.LastName">Last Name:</label>
+            <input asp-for="student!.LastName" class="form-input" />
+        </div>
+        <div class="form-group">
+            <label asp-for="student!.Age">Age:</label>
+            <input asp-for="student!.Age" class="form-input" />
+        </div>
+        <div class="form-group">
+            <input type="submit" class="submit-button" />
+        </div>
     </form>
 </div>
