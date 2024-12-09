@@ -175,5 +175,34 @@ namespace WebAPI.Controllers
             }
         }
     
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(String id) {
+            try {
+                var studentData = await _context.Student.Where(x => x.StudentID == id).FirstOrDefaultAsync();
+            
+                if(studentData == null) {
+                    throw new ArgumentException("Student Not Found");
+                }
+
+                _context.Student.Remove(studentData);
+                await _context.SaveChangesAsync();
+
+                var response = new ApiResponse<String> {
+                     StatusCode = StatusCodes.Status200OK,
+                     HttpMethod = HttpContext.Request.Method,
+                     Data = "Data Deleted!"
+                };
+
+                return Ok(response);
+            } catch(Exception e) {
+                var response = new ApiResponse<String> {
+                     StatusCode = StatusCodes.Status200OK,
+                     HttpMethod = HttpContext.Request.Method,
+                     Data = e.Message
+                };
+
+                return BadRequest(response);
+            }
+        }
     }
 }

@@ -185,8 +185,8 @@
       "PackagePath": "staticwebassets/css/Students.css"
     },
     {
-      "Id": "/Users/lazycode/Projects/WebAPI/WebAPI/wwwroot/css/headers.css",
-      "PackagePath": "staticwebassets/css/headers.css"
+      "Id": "/Users/lazycode/Projects/WebAPI/WebAPI/wwwroot/css/layout.css",
+      "PackagePath": "staticwebassets/css/layout.css"
     },
     {
       "Id": "/Users/lazycode/Projects/WebAPI/WebAPI/wwwroot/css/site.css",

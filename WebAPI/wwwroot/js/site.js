@@ -1,5 +1,13 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿$(document).ready(function () {
+    if (window.location.pathname === "/Privacy") {
+        $("#privacy-icon").html('<use xlink:href="#privacy-filled"/>');
+    } else {
+        $("#privacy-icon").html('<use xlink:href="#privacy-empty"/>');
+    }
 
-// Write your JavaScript code.
-var title = document.getElementById();
+    if (window.location.pathname === "/" || window.location.pathname === "/Index") {
+        $("#home-icon").html('<use xlink:href="#home-filled"/>');
+    } else {
+        $("#home-icon").html('<use xlink:href="#home-empty"/>');
+    }
+});

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lSBpNNVevMrdMnh8dmnZso0buaP8NBGZGByLrav1Ldc=",
+  "Hash": "UNhOSS0AB59joGa8Ob0CZUyj9HhIEHXKp92Gu76vzOc=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -891,12 +891,12 @@
       "OriginalItemSpec": "/Users/lazycode/Projects/WebAPI/WebAPI/obj/Debug/net8.0/scopedcss/projectbundle/WebAPI.bundle.scp.css"
     },
     {
-      "Identity": "/Users/lazycode/Projects/WebAPI/WebAPI/wwwroot/css/headers.css",
+      "Identity": "/Users/lazycode/Projects/WebAPI/WebAPI/wwwroot/css/layout.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/lazycode/Projects/WebAPI/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "css/headers.css",
+      "RelativePath": "css/layout.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -907,7 +907,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/headers.css"
+      "OriginalItemSpec": "wwwroot/css/layout.css"
     },
     {
       "Identity": "/Users/lazycode/Projects/WebAPI/WebAPI/wwwroot/css/site.css",
