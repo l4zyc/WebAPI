@@ -181,12 +181,12 @@
       "PackagePath": "staticwebassets/WebAPI.bundle.scp.css"
     },
     {
-      "Id": "/Users/lazycode/Projects/WebAPI/WebAPI/wwwroot/css/Students.css",
-      "PackagePath": "staticwebassets/css/Students.css"
+      "Id": "/Users/lazycode/Projects/WebAPI/WebAPI/wwwroot/css/Layout.css",
+      "PackagePath": "staticwebassets/css/Layout.css"
     },
     {
-      "Id": "/Users/lazycode/Projects/WebAPI/WebAPI/wwwroot/css/layout.css",
-      "PackagePath": "staticwebassets/css/layout.css"
+      "Id": "/Users/lazycode/Projects/WebAPI/WebAPI/wwwroot/css/Students.css",
+      "PackagePath": "staticwebassets/css/Students.css"
     },
     {
       "Id": "/Users/lazycode/Projects/WebAPI/WebAPI/wwwroot/css/site.css",

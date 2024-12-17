@@ -1,30 +1,66 @@
 ﻿@page
 @model WebAPI.Pages.Student.StudentModel
-@{
-    ViewData["Title"] = "Student Page";
-}
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.all.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const statusMessage = '@(Model.StatusMessage ?? string.Empty)';
+            if (statusMessage) {
+                Swal.fire({
+                    title: statusMessage === 'Success' ? 'Success' : 'Error',
+                    text: statusMessage === 'Success' ? 'Student Record Added!' : 'Error while adding Student Record',
+                    icon: statusMessage === 'Success' ? 'success' : 'error',
+                    confirmButtonText: 'OK'
+                }).then((result) => {
+                    if(result.isConfirmed && statusMessage == 'Success') {
+                        resetFormFields();
+                    }
+                });
+            }
+        });
+
+        function resetFormFields() {
+            const form = document.getElementById("studentForm");
+            if(form) {
+                form.reset();
+            }
+        }
+    </script>
+}
 
 <head>
     <link rel="stylesheet" href="~/css/Students.css" />
 </head>
 
+<h1 class="text-center">
+    Student Form
+</h1>
+
 <div class="form-container">
-    <form method="post">
+    <form id="studentForm" method="post">
         <div class="form-group">
-            <label asp-for="student!.FirstName">First Name:</label>
-            <input asp-for="student!.FirstName" class="form-input" />
+            <label asp-for="request!.FirstName">First Name:</label>
+            <input asp-for="request!.FirstName" class="form-input" />
         </div>
         <div class="form-group">
-            <label asp-for="student!.LastName">Last Name:</label>
-            <input asp-for="student!.LastName" class="form-input" />
+            <label asp-for="request!.LastName">Last Name:</label>
+            <input asp-for="request!.LastName" class="form-input" />
         </div>
         <div class="form-group">
-            <label asp-for="student!.Age">Age:</label>
-            <input asp-for="student!.Age" class="form-input" />
+            <label asp-for="request!.Age">Age:</label>
+            <input asp-for="request!.Age" class="form-input" />
+        </div>
+        <div class="form-group">
+            <label asp-for="request!.MajorID">MajorID:</label>
+            <input asp-for="request!.MajorID" class="form-input" />
         </div>
         <div class="form-group">
             <input type="submit" class="submit-button" />
         </div>
     </form>
+
+    <div class="d-none">
+        <input asp-for="StatusMessage" type="hidden" value="@Model.StatusMessage ?? string.Empty"/>
+    </div>
 </div>
